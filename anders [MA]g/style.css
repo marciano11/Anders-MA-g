@@ -1,0 +1,25 @@
+.cool:hover .lijn-1,
+.cool:hover .lijn-2,
+.cool:hover .lijn-3 {
+    transform-origin: 50% 50%;
+    animation: line-grow ease-out 500ms;
+}
+
+.cool:hover .lijn-2 {
+    animation-delay: 75ms;
+}
+
+.cool:hover .lijn-3 {
+    animation-delay: 150ms;
+}
+
+@keyframes line-grow {
+    0% { transform: scaleX(1) }
+    50% { transform: scaleX(1.5) }
+    100% { transform: scaleX(1) }
+}
+
+.cool {
+    margin-top: 35px;
+    margin-left: 350px;
+}
